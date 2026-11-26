@@ -5,11 +5,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/prototype",
-        destination: "/prototypev2.html",
+        destination: "/prototypev3.html",
       },
       {
         source: "/admin",
-        destination: "/admin.html",
+        destination: "/adminv2.html",
       },
     ];
   },
