@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/prototype",
-        destination: "/prototype.html",
+        destination: "/prototypev2.html",
       },
       {
         source: "/admin",
