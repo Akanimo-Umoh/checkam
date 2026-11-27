@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   async rewrites() {
@@ -11,8 +11,12 @@ const nextConfig: NextConfig = {
         source: "/admin",
         destination: "/adminv2.html",
       },
-    ];
+      {
+        source: "/full-design",
+        destination: "/full.html",
+      },
+    ]
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
