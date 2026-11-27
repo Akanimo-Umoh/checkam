@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         source: "/full-design",
         destination: "/full.html",
       },
+      {
+        source: "/admin-full",
+        destination: "/admin-full.html",
+      },
     ]
   },
 }
