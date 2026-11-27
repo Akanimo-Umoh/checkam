@@ -1,6 +1,8 @@
 import { Figtree, Bricolage_Grotesque } from "next/font/google"
 
 import type { Metadata } from "next"
+import { NextIntlClientProvider } from "next-intl"
+import { getLocale } from "next-intl/server"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { cn } from "@/lib/utils"
@@ -21,14 +23,18 @@ const bricolage = Bricolage_Grotesque({
   variable: "--font-heading",
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  // "en" or "pcm", from the cookie
+  const locale = await getLocale()
+
   return (
+    // lang tells screen readers which language to read in
     <html
-      lang="en"
+      lang={locale}
       suppressHydrationWarning
       className={cn(
         "antialiased",
@@ -38,7 +44,8 @@ export default function RootLayout({
       )}
     >
       <body>
-        {children}
+        {/* passes the language and words down to client components */}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Analytics />
       </body>
     </html>

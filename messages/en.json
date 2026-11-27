@@ -1,0 +1,32 @@
+{
+  "common": {
+    "appName": "CheckAm NG",
+    "language": "Language",
+    "english": "English",
+    "pidgin": "Pidgin",
+    "disclaimer": "CheckAm helps you check product information. It does not replace the advice of a pharmacist or doctor."
+  },
+  "result": {
+    "matched": {
+      "label": "Matched",
+      "title": "Registration record matched",
+      "body": "A registration record matching this product was found. The details on the pack match the official record. Still check the packaging, batch number and expiry date before use."
+    },
+    "unmatched": {
+      "label": "Unmatched",
+      "title": "No matching record found",
+      "body": "We could not find a registration record matching this product. This does not by itself mean there is a problem with the product. Show it to a pharmacist, or contact NAFDAC for guidance.",
+      "borrowed": "This NAFDAC number is registered to a different product: {name}."
+    },
+    "unverified": {
+      "label": "Unverified",
+      "title": "Unable to verify",
+      "body": "We could not complete the check right now. Some information may be missing, the product may not be in our records yet, or our system may have a temporary problem. Try again later, or ask a pharmacist for help."
+    },
+    "alert": {
+      "label": "Official alert",
+      "title": "NAFDAC has issued an alert",
+      "body": "An official alert or recall has been issued for this product or its batch. Please don't ignore this notice. Read the alert and follow NAFDAC's instructions. If you have already used the product or need help, talk to a pharmacist or doctor."
+    }
+  }
+}

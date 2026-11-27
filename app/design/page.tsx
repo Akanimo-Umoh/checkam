@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
+import { getTranslations } from "next-intl/server"
+import { LanguageToggle } from "@/components/language-toggle"
 
 const typeScale = [
   {
@@ -50,10 +52,31 @@ const results = [
   { name: "Official alert", fg: "text-alert", bg: "bg-alert-soft" },
 ]
 
-export default function DesignPage() {
+export default async function DesignPage() {
+  const t = await getTranslations("result")
+
   return (
     <main className="mx-auto flex max-w-3xl flex-col gap-10 p-6">
       <h1 className="font-heading text-display-lg">CheckAm design check</h1>
+
+      <section className="flex flex-col gap-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-overline text-muted-foreground uppercase">
+            Language
+          </h2>
+          <LanguageToggle />
+        </div>
+        <div className="flex flex-col gap-2 rounded-3xl bg-matched-soft p-5">
+          <span className="text-overline text-matched uppercase">
+            {t("matched.label")}
+          </span>
+          <h3 className="font-heading text-display-md">{t("matched.title")}</h3>
+          <p className="text-body text-ink-2">{t("matched.body")}</p>
+        </div>
+        <p className="text-meta text-muted-foreground">
+          {t("unmatched.borrowed", { name: "Vitamin C Syrup 100 mg/5 mL" })}
+        </p>
+      </section>
 
       <section className="flex flex-col gap-4">
         <h2 className="text-overline text-muted-foreground uppercase">

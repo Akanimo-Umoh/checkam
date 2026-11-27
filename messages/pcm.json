@@ -1,0 +1,32 @@
+{
+  "common": {
+    "appName": "CheckAm NG",
+    "language": "Language",
+    "english": "English",
+    "pidgin": "Pidgin",
+    "disclaimer": "CheckAm dey help you check product information. E no fit replace di advice of pharmacist or doctor."
+  },
+  "result": {
+    "matched": {
+      "label": "Matched",
+      "title": "Registration record match",
+      "body": "We don find registration record wey match dis product. Di details for di pack match wetin dey NAFDAC record. Abeg still check di packaging, batch number and expiry date before you use am."
+    },
+    "unmatched": {
+      "label": "Unmatched",
+      "title": "We no see record wey match",
+      "body": "We no fit find registration record wey match dis product. Dis one no mean say di product get problem. Abeg show am to pharmacist, or contact NAFDAC make dem guide you.",
+      "borrowed": "Dis NAFDAC number na for anoda product: {name}."
+    },
+    "unverified": {
+      "label": "Unverified",
+      "title": "We no fit check am",
+      "body": "We no fit finish di check for now. Maybe some information no complete, di product never enter our record, or our system get small wahala. Abeg try again later, or ask pharmacist make e help you."
+    },
+    "alert": {
+      "label": "Official alert",
+      "title": "NAFDAC don give alert",
+      "body": "We see say official alert or recall dey for dis product or im batch. Abeg no take dis notice play. Read di alert well and do wetin NAFDAC talk. If you don already use di product, or you need help, abeg talk to pharmacist or doctor."
+    }
+  }
+}
