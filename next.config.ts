@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/design-system",
-        destination: "/design-system.html",
+        destination: "/design-system.html", 
       },
     ]
   },
