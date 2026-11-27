@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
 
 const typeScale = [
   {
@@ -85,6 +86,9 @@ export default function DesignPage() {
         <h2 className="text-overline text-muted-foreground uppercase">
           Buttons
         </h2>
+        <Button variant="outline" size="icon" aria-label="Back">
+          <ArrowLeft />
+        </Button>
         <Button>Check this medicine</Button>
         <Button variant="outline">Type the number instead</Button>
         <Button variant="ghost" size="sm">
