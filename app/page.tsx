@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
 
 export default function Page() {
   return (
@@ -13,6 +14,10 @@ export default function Page() {
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
+
+        <Button variant="outline" size="icon" aria-label="Back">
+          <ArrowLeft />
+        </Button>
       </div>
     </div>
   )
